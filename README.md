@@ -74,7 +74,7 @@
 </table></td></tr>
 <table><tr><td> <em>Deliverable 4: </em> Misc </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="https://user-images.githubusercontent.com/54863474/211707773-e6aef7cb-d5b2-4053-bbb1-b09fc609041e.png"></td></tr>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Add pull request for the assignment</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="//anish pll">anish pll</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/AKHIL2565/python-assignment/pull/6">https://github.com/AKHIL2565/python-assignment/pull/6</a> </td></tr>
 <tr><td> <em>Sub-Task 2: </em> Explain any issues/difficulties or something you learned while doing this assignment</td></tr>
 <tr><td> <em>Response:</em> <p>I have learnt to execute a project by testing the testcases with pytest<br>fixtures and also I have learnt about the raising of different exception handling<br>techniques, appending into the list ,&nbsp;<div>calculating the sum of the list etc.<div>I have<br>gone through some issues while writing the test cases but eventually I have<br>learnt how to code them and executed all the test cases using -rA.</div></div><br></p><br></td></tr>
 <tr><td> <em>Sub-Task 3: </em> Screenshots of successful output</td></tr>
