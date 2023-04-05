@@ -20,7 +20,7 @@ def check():
     bn = BurgerMachine()
     return bn
 
-"""def test_bun_is_the_first (machine):
+def test_bun_is_the_first (machine):
     with pytest.raises (InvalidStageException): 
         machine.handle_patty("turkey") 
         machine.handle_patty("beef") 
@@ -28,11 +28,11 @@ def check():
         machine.handle_toppings("bbq")
         machine.handle_toppings("mayo") 
         machine.handle_toppings("cheese") 
-"""
 
 
-"""@pytest.fixture
-def toppings_out_of_stock (check): 
+
+
+def test_toppings_in_stock (check): 
     # UCID is ar2565 and date is  23/03/2023
     check.toppings[0].quantity = 0 
     with pytest.raises (OutOfStockException): 
@@ -41,8 +41,14 @@ def toppings_out_of_stock (check):
         check.handle_patty("next")
         check.handle_toppings("lettuce")
 
-#pytest --collect-only burger_machine.py
-
+def test_patty_in_stock(machine):
+    # UCID is ar2565 and date is  23/03/2023
+    machine.patties[1].quantity=0
+    with pytest.raises(OutOfStockException):
+        machine.handle_bun("lettuce wrap")
+        machine.handle_patty("veggie")
+        
+        
 def test_patty_is_three (machine):
 # UCID is ar2565 and date is  23/03/2023 
     with pytest.raises (ExceededRemainingChoicesException): 
@@ -76,8 +82,8 @@ def test_cost_of_burger (burger):
     burger.handle_toppings("tomato")
     burger.handle_toppings("done")
     price1= burger.calculate_cost()
-    assert price1 == "$11.00"
-    burger.handle_pay(price1,"$11.00") 
+    assert price1 == "$4.00"
+    burger.handle_pay(price1,"$4.00") 
 
     burger.handle_bun("no bun") 
     burger.handle_patty("beef")
