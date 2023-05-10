@@ -213,7 +213,7 @@ def purchase():
         # create order data
         order_id = -1
         if not has_error:
-            ##UCID: ac2526, Date: Dec21
+            ##UCID: ar2565, Date: 05/08
             address = request.form.get('apt') + "," + request.form.get('city') + "," + request.form.get('state') + "," + request.form.get('country') + "," + request.form.get('zpcode')
             payment_method = request.form.get('paymentmethod')
             money_received = request.form.get('amount')
@@ -247,7 +247,7 @@ def purchase():
                 DB.getDB().rollback()
         # update stock based on cart data
         if not has_error:
-            ##UCID: ac2526, Date: Dec 21
+            ##UCID: ar2565, Date: 05/08
             result = DB.update("""
             UPDATE IS601_S_Products 
                 set stock = stock - (select IFNULL(desired_quantity, 0) FROM IS601_S_Cart WHERE product_id = IS601_S_Products.id and user_id = %(uid)s) 
