@@ -75,7 +75,7 @@ def items():
 def shop_list():
     rows = []
     args = []
-    ##UCID: ac2526 Date Dec 17th
+    ##UCID: ar2565 Date 05/08
     name = request.args.get("name")
     category = request.args.get("category")
     price = request.args.get("price")
